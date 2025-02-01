@@ -21,6 +21,7 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
   color: pink;
+  text-transform: capitalize;
 }
 
 a {
@@ -45,6 +46,7 @@ header{
   margin-bottom: 2rem;
   background-color: #282c34;
   padding:1.5rem;
+
 }
 
 .skill{
@@ -108,5 +110,19 @@ a:focus {
 
   .hamburger {
     display: none;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #fefefe;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #282c34;
   }
 }
