@@ -11,7 +11,12 @@ a {
   text-decoration: underline;
 }
 
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
 
 body {
   margin: 0 auto;
@@ -155,7 +160,8 @@ a:focus {
   background-color: #fff;
 }
 
-.ligth .hamburger {
-  background-color: #efefef;
-  color: #111;
+html.ligth .hamburger {
+  background-color: #111;
 }
+
+
