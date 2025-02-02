@@ -4,6 +4,14 @@ html {
     font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
 }
+a {
+  padding: 0.5rem 1rem;
+  color: #6ec;
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+
 
 body {
   margin: 0 auto;
@@ -24,12 +32,7 @@ h1 {
   text-transform: capitalize;
 }
 
-a {
-  padding: 0.5rem 1rem;
-  color: #6ec;
-  margin-right: 15px;
-  text-decoration: underline;
-}
+
 
 footer {
   display: flex;
@@ -125,4 +128,34 @@ a:focus {
     font-size: 1.15em;
     background-color: #282c34;
   }
+}
+
+
+html.light {
+  background-color: #fefefe;
+  color: #111;
+}
+
+.light .nav-links a {
+  color: #111;
+}
+
+html.light footer {
+  background-color: #efefef;
+  color: #111;
+}
+
+html.light header {
+  background-color: #efefef;
+  color: #111;
+}
+
+.light .nav-links a:hover,
+a:focus {
+  background-color: #fff;
+}
+
+.ligth .hamburger {
+  background-color: #efefef;
+  color: #111;
 }

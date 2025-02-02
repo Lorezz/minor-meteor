@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
+const pageTitle = "Astro...";
 const names = [
   "+Labio",
   "+Nzo",
@@ -13,8 +15,10 @@ const names = [
 ];
 ---
 
-<BaseLayout title='Astro...'>
+<BaseLayout title={pageTitle}>
   <ul>
     {names.map((name) => <li class='skill'>{name}</li>)}
+    <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
   </ul>
 </BaseLayout>
